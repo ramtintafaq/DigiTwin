@@ -3,6 +3,7 @@
 #include "include/BuildingTable.h"
 #include "include/StructureTable.h"
 #include "include/SensorTable.h"
+#include "include/DataTable.h"
 
 int main() {
     sqlite3* db;
@@ -26,6 +27,10 @@ int main() {
 
     if (SensorTable::create(db) == SQLITE_OK)
         std::cout << "Sensors table created.\n";
+
+    if (DataTable::create(db) == SQLITE_OK)
+        std::cout << "Data table created.\n";
+
 
     // Close the database
     sqlite3_close(db);

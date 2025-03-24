@@ -15,6 +15,8 @@ set(SOURCES
         src/StructureTable.cpp
         include/SensorTable.h
         src/SensorTable.cpp
+	include/DataTable.h      
+        src/DataTable.cpp         
 )
 
 # Create the executable

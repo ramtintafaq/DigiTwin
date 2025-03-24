@@ -5,12 +5,11 @@
 int DataTable::create(sqlite3* db) {
     const char* sql = R"(
         CREATE TABLE IF NOT EXISTS data (
-            data_id INT PRIMARY KEY AUTO_INCREMENT,
-            id INT,
+            data_id INTEGER PRIMARY KEY AUTOINCREMENT,
+            sensor_id INT,
             timestamp TIMESTAMP NOT NULL,
-            data_value DOUBLE NOT NULL,
-            FOREIGN KEY (id) REFERENCES SensorTable(id),
-            INDEX(timestamp)
+            data_value TEXT NOT NULL,
+            FOREIGN KEY (sensor_id) REFERENCES SensorTable(id)
         );
     )";
 

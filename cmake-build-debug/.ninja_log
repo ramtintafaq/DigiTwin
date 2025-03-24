@@ -1,8 +1,0 @@
-# ninja log v6
-7	641	1742820500860698363	CMakeFiles/Team.dir/main.cpp.o	e028363483a28c8f
-642	743	1742820501495153523	Team	d943d76821d50c24
-8	642	1742820500861068070	CMakeFiles/Team.dir/src/BuildingTable.cpp.o	b5ddc658d27decf4
-5	596	1742821030283609617	CMakeFiles/Team.dir/main.cpp.o	e028363483a28c8f
-6	597	1742821030284213196	CMakeFiles/Team.dir/src/StructureTable.cpp.o	82bb7034456eb925
-6	597	1742821030284433778	CMakeFiles/Team.dir/src/SensorTable.cpp.o	20d01bbefb605646
-597	716	1742821030875576300	Team	403d787afdf8aee9

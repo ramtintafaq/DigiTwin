@@ -10,7 +10,8 @@ int DataTable::create(sqlite3* db) {
             position_id INT,
             timestamp TIMESTAMP NOT NULL,
             data_value TEXT NOT NULL,
-            FOREIGN KEY (sensor_id) REFERENCES SensorTable(id)
+            FOREIGN KEY (sensor_id) REFERENCES SensorTable(id),
+            FOREIGN KEY (position_id) REFERENCES SensorTable(position_id)
         );
     )";
 

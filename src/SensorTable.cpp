@@ -5,6 +5,7 @@ int SensorTable::create(sqlite3* db) {
     const char* sql = R"(
         CREATE TABLE IF NOT EXISTS sensors (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
+            position_id INTEGER NOT NULL,
             type TEXT NOT NULL,
             structure_id INTEGER NOT NULL,
             installation_date TEXT,

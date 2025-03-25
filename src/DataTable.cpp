@@ -7,6 +7,7 @@ int DataTable::create(sqlite3* db) {
         CREATE TABLE IF NOT EXISTS data (
             data_id INTEGER PRIMARY KEY AUTOINCREMENT,
             sensor_id INT,
+            position_id INT,
             timestamp TIMESTAMP NOT NULL,
             data_value TEXT NOT NULL,
             FOREIGN KEY (sensor_id) REFERENCES SensorTable(id)

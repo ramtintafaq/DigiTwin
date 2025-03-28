@@ -13,7 +13,7 @@ Thumbs.db
 
 *.db
 
-/db.conf
+db.conf
 *.log
 
 *~

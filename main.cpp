@@ -3,8 +3,12 @@
 #include "BuildingTable.h"
 #include "StructureTable.h"
 
+std::string loadConnectionString(const std::string& filename);
+
 int main() {
-    PGconn* conn = PQconnectdb("host=localhost dbname=digitwin user=ramtin password=7N@p45678911");
+    std::string connStr = loadConnectionString("db.conf");
+
+    PGconn* conn = PQconnectdb(connStr.c_str());
 
     if (PQstatus(conn) != CONNECTION_OK) {
         std::cerr << "Connection failed: " << PQerrorMessage(conn);

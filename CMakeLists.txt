@@ -12,6 +12,7 @@ set(SOURCES
         include/StructureTable.h
         src/StructureTable.cpp
         src/StructureTable.h
+        include/ConfigLoader.h
 )
 
 add_executable(TeamP ${SOURCES})

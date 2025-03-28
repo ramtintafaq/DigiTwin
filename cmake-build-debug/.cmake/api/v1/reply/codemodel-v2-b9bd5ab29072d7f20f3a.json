@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.30"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "TeamP",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "TeamP::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TeamP-Debug-ec58db0803dc926c7017.json",
+					"name" : "TeamP",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/ramtin.tfgh/Dropbox (Politecnico Di Torino Studenti)/Mac/Documents/C++Project/TeamP/cmake-build-debug",
+		"source" : "/Users/ramtin.tfgh/Dropbox (Politecnico Di Torino Studenti)/Mac/Documents/C++Project/TeamP"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

@@ -8,14 +8,16 @@ include_directories(/opt/homebrew/opt/libpq/include)
 
 set(SOURCES
         main.cpp
+        include/BuildingTable.h
         src/BuildingTable.cpp
         include/StructureTable.h
         src/StructureTable.cpp
         include/ConfigLoader.h
-        src/SensorTable.cpp        # Added new source file for SensorTable
+        src/ConfigLoader.cpp
         include/SensorTable.h      # Added new header file for SensorTable
-        src/SensorDataTable.cpp    # Added new source file for SensorDataTable
+        src/SensorTable.cpp        # Added new source file for SensorTable
         include/SensorDataTable.h  # Added new header file for SensorDataTable
+        src/SensorDataTable.cpp    # Added new source file for SensorDataTable
 )
 
 add_executable(TeamP ${SOURCES})

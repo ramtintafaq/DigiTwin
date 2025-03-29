@@ -4,6 +4,7 @@
 #include "StructureTable.h"
 #include "SensorTable.h"
 #include "SensorDataTable.h"
+#include "ConfigLoader.h"
 
 std::string loadConnectionString(const std::string& filename);
 

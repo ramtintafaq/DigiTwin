@@ -11,7 +11,6 @@ set(SOURCES
         src/BuildingTable.cpp
         include/StructureTable.h
         src/StructureTable.cpp
-        src/StructureTable.h
         include/ConfigLoader.h
         src/SensorTable.cpp        # Added new source file for SensorTable
         include/SensorTable.h      # Added new header file for SensorTable

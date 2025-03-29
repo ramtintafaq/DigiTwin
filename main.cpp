@@ -2,6 +2,9 @@
 #include <libpq-fe.h>
 #include "BuildingTable.h"
 #include "StructureTable.h"
+#include "SensorTable.h"
+#include "SensorDataTable.h"
+#include "ConfigLoader.h"
 
 std::string loadConnectionString(const std::string& filename);
 
@@ -17,8 +20,11 @@ int main() {
     }
 
     std::cout << "Connected to PostgreSQL successfully!\n";
+
     BuildingTable::create(conn);
     StructureTable::create(conn);
+    SensorTable::create(conn);
+    SensorDataTable::create(conn);
 
     PQfinish(conn);
     return 0;

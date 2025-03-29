@@ -3,20 +3,24 @@ project(TeamP)
 
 set(CMAKE_CXX_STANDARD 20)
 
-
 include_directories(include)
 include_directories(/opt/homebrew/opt/libpq/include)
+
 set(SOURCES
         main.cpp
+        include/BuildingTable.h
         src/BuildingTable.cpp
         include/StructureTable.h
         src/StructureTable.cpp
-        src/StructureTable.h
         include/ConfigLoader.h
+        src/ConfigLoader.cpp
+        include/SensorTable.h      # Added new header file for SensorTable
+        src/SensorTable.cpp        # Added new source file for SensorTable
+        include/SensorDataTable.h  # Added new header file for SensorDataTable
+        src/SensorDataTable.cpp    # Added new source file for SensorDataTable
 )
 
 add_executable(TeamP ${SOURCES})
-
 
 link_directories(/opt/homebrew/opt/libpq/lib)
 
